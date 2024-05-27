@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'HDKitCore_Example' do
+  pod 'HDKitCore', :path => '../'
+  pod 'LookinServer', :configurations => ['Debug']
+
+  target 'HDKitCore_Tests' do
+    inherit! :search_paths
+
+
+  end
+end
